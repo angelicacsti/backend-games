@@ -1,6 +1,7 @@
 from django.db import models
 
-class UpdateHome(models.Model):
+class Home(models.Model):
+    id = models.AutoField(primary_key=True)
     nit = models.CharField('NIT', max_length = 30)
     nombrecomercial = models.CharField('Nombre Comercial', max_length = 30)
     razonsocial = models.CharField('Razón Social', max_length = 30)
